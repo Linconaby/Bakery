@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1 {
+
+    background: rgba(0, 0, 0, 0.6) url(./Image/IMG-20230318-WA0004.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 14rem;
+    font-size: 1.2rem;
+}
+
+.section1 h1,
+p,
+button {
+    margin-bottom: 1rem;
+}
+
+
+
+.button {
+    padding: 1em;
+    background-color: #CE0639;
+    color: white;
+    border-radius: 0.8em;
+    border: 0em;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.section2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Our_Services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.card img {
+    width: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.cardheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section3_image {
+    align-self: center;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.section3 p,
+h4 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.steps_info {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+
+.steps_info a {
+    color: black;
+    text-decoration: none;
+}
+
+.steps_info a:hover {
+    color: blue;
+}
+
+.step_image {
+    align-self: center;
+}
+
+.section4 {
+    text-align: center;
+}
+
+.section4 .intro {
+    background-image: url(./Image/BACKGROUND.png);
+    background-size: cover;
+}
+
+.intro p {
+    margin-bottom: 6rem;
+}
+
+.section4card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card-body {
+    position: relative;
+    bottom: 100px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.plan_amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-header {
+    margin: 0rem;
+}
+
+.footer {
+    background-image: url(./Image/footer\ background.png);
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    color: white;
+}
+
+@media (max-width: 780px) {
+    .section3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section3_image {
+        width: 90%;
+        padding-bottom: 2rem;
+
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .steps_info {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+
+}
